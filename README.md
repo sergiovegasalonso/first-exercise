@@ -1,75 +1,42 @@
-# Nuxt Minimal Starter
+# Exercise
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+```js
+const categories = [
+    {
+        name: 'category1',
+        subcategories: [
+            {
+                name: 'category2',
+                subcategories: []
+            },
+            {
+                name: 'category3',
+                subcategories: [
+                    {
+                        name: 'category4',
+                        subcategories: []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        name: 'category5',
+        subcategories: []
+    }
+];
 
-## Setup
+// TO-DO: Implement this function
+const getCategoryPath = (categories, categoryName) => {
+    let path;
 
-Make sure to install dependencies:
+    path = categories.reduce()
 
-```bash
-# npm
-npm install
+    return path;
+};
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+// OUTPUT SAMPLES
+console.log(getCategoryPath(categories, 'category4')); // should output: '/category1/category3/category4'
+console.log(getCategoryPath(categories, 'category2')); // should output: '/category1/category2'
+console.log(getCategoryPath(categories, 'category5')); // should output: '/category5'
 ```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
