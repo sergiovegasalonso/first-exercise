@@ -6,7 +6,7 @@
 2. prettier with basic configuration
 3. husky with pre commit conditions pipeline
 4. github actions on push and pull request with the same conditions that husky pre commit
-5. scalable apps approach (feature module extension, shared module extension)
+5. scalable front-end applications approach (feature module extension, shared module extension)
 
 ## this solution does not contain (for lack of time)
 
