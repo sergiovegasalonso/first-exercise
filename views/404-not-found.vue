@@ -1,6 +1,6 @@
 <template>
-    <div>
-        404 Not Found
+  <div>
+    404 Not Found
     <NuxtLink to="/">Go back to home</NuxtLink>
-    </div>
+  </div>
 </template>
