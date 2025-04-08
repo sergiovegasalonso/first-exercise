@@ -44,4 +44,10 @@ main {
   margin: 0 auto;
   background-color: var(--background-color);
 }
+
+@media (max-width: 500px) {
+  main {
+    width: 90vw;
+  }
+}
 </style>
