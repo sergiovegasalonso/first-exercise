@@ -6,6 +6,7 @@
 2. prettier with basic configuration
 3. husky with pre commit conditions pipeline
 4. github actions on push and pull request with the same conditions that husky pre commit
+5. scalable apps approach (feature module extension, shared module extension)
 
 ## this solution does not contain (for lack of time)
 
@@ -13,6 +14,8 @@
 2. tailwindcss basic configuration
 3. cached query system like tanstack query
 4. theming configuration
+5. develop all tests
+6. split layout in components
 
 ## definition
 
