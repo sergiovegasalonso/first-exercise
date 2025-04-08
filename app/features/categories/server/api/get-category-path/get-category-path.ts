@@ -17,7 +17,8 @@ const getCategoryPath = (
   categoryName: string
 ): string | undefined => {
   for (const category of categories) {
-    if (category.name === categoryName) return `/${category.name}`
+    if (category.name.toLocaleLowerCase() === categoryName.toLocaleLowerCase())
+      return `/${category.name}`
 
     if (category.subcategories.length > 0) {
       const subPath = getCategoryPath(category.subcategories, categoryName)

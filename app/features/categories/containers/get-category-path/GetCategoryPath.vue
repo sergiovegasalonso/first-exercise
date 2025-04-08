@@ -17,6 +17,7 @@ function handleOnTextInputChange(value: string): void {
 async function handleOnButtonClick() {
   if (!categoryToFind.value) {
     alert('Category cannot be empty')
+    return
   }
   const response = await getCategoryPath(categoryToFind.value)
   categoryPathResult.value = response?.data.value?.result
