@@ -8,4 +8,11 @@ export default defineNuxtConfig({
       })
     },
   },
+  serverHandlers: [
+    {
+      route: '/categories/api/get-category-path',
+      handler:
+        '~/app/features/categories/server/api/get-category-path/get-category-path.ts',
+    },
+  ],
 })
