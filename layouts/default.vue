@@ -48,8 +48,8 @@ main {
 @media (max-width: 500px) {
   main {
     width: 100%;
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 }
 </style>
