@@ -1,5 +1,5 @@
-import { test } from 'vitest'
+import { test, expect } from 'vitest'
 
 test('my test', () => {
-  //expect(1).toBe(2) // jest API
+  expect(1).toBe(1) // jest API
 })

@@ -1,8 +1,9 @@
 import { defineVitestConfig } from '@nuxt/test-utils/config'
+import { configDefaults } from "vitest/config";
 
 export default defineVitestConfig({
   test: {
     include: ['**/*.{test,spec}.?(c|m)[jt]s?(x)'],
-    exclude: ['**/node_modules/**', '**/dist/**'],
+    exclude: [...configDefaults.exclude, '**/node_modules/**', '**/dist/**'],
   },
 })

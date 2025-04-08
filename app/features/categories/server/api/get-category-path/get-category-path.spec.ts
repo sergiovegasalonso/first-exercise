@@ -1,5 +1,5 @@
-import { test } from 'vitest'
+import { test, expect } from 'vitest'
 
 test('my test', () => {
-  // ... test with Nuxt environment!
+  expect(1).toBe(1) // jest API
 })

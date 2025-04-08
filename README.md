@@ -38,3 +38,9 @@ console.log(getCategoryPath(categories, 'category4')) // should output: '/catego
 console.log(getCategoryPath(categories, 'category2')) // should output: '/category1/category2'
 console.log(getCategoryPath(categories, 'category5')) // should output: '/category5'
 ```
+## pending tasks
+
+1. e2e
+2. .env
+3. pr pipeline
+4. explicación
