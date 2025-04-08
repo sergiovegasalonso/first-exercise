@@ -39,9 +39,10 @@ console.log(getCategoryPath(categories, 'category2')) // should output: '/catego
 console.log(getCategoryPath(categories, 'category5')) // should output: '/category5'
 ```
 
-## pending tasks
+## this solution contains
 
-1. e2e
-2. .env
-3. pr pipeline
-4. explicación
+1. eslint with basic configuration
+2. prettier with basic configuration
+3. husky with pre commit conditions pipeline
+4. github actions on push and pull request with the same conditions that husky pre commit
+5. tailwindcss with basic configuration

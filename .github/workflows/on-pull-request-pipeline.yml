@@ -1,0 +1,25 @@
+name: Check code on PR
+on: pull_request
+
+jobs:
+  run-linter-and-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout code on push
+        uses: actions/checkout@v4
+
+      - name: npm install
+        run: npm i
+
+      - name: format code
+        run: npm run format
+
+      - name: lint code
+        run: npm run lint
+
+      - name: check correct build
+        run: npm run build
+
+      - name: run unit tests
+        run: npm run test:unit
