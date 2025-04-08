@@ -19,8 +19,9 @@ export default defineNuxtConfig({
       })
     },
   },
-  extends: ['./app/features/categories'],
+  extends: ['./app/features/categories', './app/shared'],
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
   modules: ['@nuxt/eslint', '@nuxt/test-utils', '@nuxt/icon'],
+  css: ['~/assets/css/main.css'],
 })

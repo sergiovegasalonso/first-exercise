@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>dsf</h1>
+    <header class="flex justify-center w-full h-sm bg-orange-500"></header>
     <slot />
   </div>
 </template>

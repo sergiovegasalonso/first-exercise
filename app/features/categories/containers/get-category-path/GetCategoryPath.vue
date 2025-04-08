@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import SrgButton from '../../components/buttons/srg-button/SrgButton.vue'
-import SrgTextInput from '../../components/inputs/srg-text-input/SrgTextInput.vue'
-import { getCategoryPath } from '../../services/get-category-path/get-category-path'
+import SrgButton from '~/app/shared/components/buttons/srg-button/SrgButton.vue'
+import SrgTextInput from '~/app/shared/components/inputs/srg-text-input/SrgTextInput.vue'
+import { getCategoryPath } from '~/app/features/categories/services/get-category-path/get-category-path'
 
 const textInputLabel = 'Get Category Path'
 const textInputMinLenght = 1
