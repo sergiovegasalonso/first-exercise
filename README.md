@@ -7,6 +7,13 @@
 3. husky with pre commit conditions pipeline
 4. github actions on push and pull request with the same conditions that husky pre commit
 
+## this solution does not contain (for lack of time)
+
+1. pinia store
+2. tailwindcss basic configuration
+3. cached query system like tanstack query
+4. theming configuration
+
 ## definition
 
 ```js

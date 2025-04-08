@@ -8,5 +8,6 @@ useHead({
 </script>
 
 <template>
+  <h1>Categories index page.</h1>
   <get-category-path />
 </template>

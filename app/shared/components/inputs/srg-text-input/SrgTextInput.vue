@@ -26,3 +26,9 @@ const inputValue = ref<string>('')
     />
   </div>
 </template>
+
+<style scoped>
+label {
+  display: block;
+}
+</style>

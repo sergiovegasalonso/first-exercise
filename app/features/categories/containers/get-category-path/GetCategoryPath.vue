@@ -30,6 +30,7 @@ async function handleOnButtonClick() {
       :max-length="textInputMaxLenght"
       @on-input="handleOnTextInputChange"
     />
+    <br />
     <srg-button text="Submit" @on-click="handleOnButtonClick" />
   </div>
 </template>
