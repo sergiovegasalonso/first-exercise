@@ -8,6 +8,7 @@ const textInputMinLenght = 1
 const textInputMaxLenght = 10
 
 const categoryToFind = ref<string>('')
+const categoryPathResult = ref<string | undefined>()
 
 function handleOnTextInputChange(value: string): void {
   categoryToFind.value = value
@@ -18,7 +19,7 @@ async function handleOnButtonClick() {
     alert('Category cannot be empty')
   }
   const response = await getCategoryPath(categoryToFind.value)
-  console.log(response)
+  categoryPathResult.value = response?.data.value?.result
 }
 </script>
 
@@ -32,5 +33,9 @@ async function handleOnButtonClick() {
     />
     <br />
     <srg-button text="Submit" @on-click="handleOnButtonClick" />
+    <br />
+    <div v-if="categoryPathResult">
+      {{ categoryPathResult }}
+    </div>
   </div>
 </template>
