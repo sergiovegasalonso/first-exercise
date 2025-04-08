@@ -3,9 +3,9 @@ import { mount } from '@vue/test-utils'
 import SrgTextInput from './SrgTextInput.vue'
 
 describe('SrgTextInput', () => {
-  it('component renders', () => {
+  it('component renders ok', () => {
     const props = {
-      label: 'Label example',
+      label: 'label example',
       minLength: 2,
       maxLength: 10,
     }

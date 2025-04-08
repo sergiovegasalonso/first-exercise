@@ -3,6 +3,7 @@ import SrgButton from '../../components/buttons/srg-button/SrgButton.vue'
 import SrgTextInput from '../../components/inputs/srg-text-input/SrgTextInput.vue'
 import { getCategoryPath } from '../../services/get-category-path/get-category-path'
 
+const textInputLabel = 'Get Category Path'
 const textInputMinLenght = 1
 const textInputMaxLenght = 10
 
@@ -24,9 +25,9 @@ async function handleOnButtonClick() {
 <template>
   <div>
     <srg-text-input
-      label="Get Category Path"
-      :min-lenght="textInputMinLenght"
-      :max-lenght="textInputMaxLenght"
+      :label="textInputLabel"
+      :min-length="textInputMinLenght"
+      :max-length="textInputMaxLenght"
       @on-input="handleOnTextInputChange"
     />
     <srg-button text="Submit" @on-click="handleOnButtonClick" />
