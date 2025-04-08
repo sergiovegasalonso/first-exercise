@@ -47,7 +47,9 @@ main {
 
 @media (max-width: 500px) {
   main {
-    width: 90vw;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 </style>
