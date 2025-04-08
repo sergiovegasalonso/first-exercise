@@ -30,8 +30,6 @@ const categories = [
 const getCategoryPath = (categories, categoryName) => {
     let path;
 
-    path = categories.reduce()
-
     return path;
 };
 
