@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import SrgHeader from './header/SrgHeader.vue'
+import SrgHeader from '~/layouts/header/SrgHeader.vue'
 </script>
 
 <template>
