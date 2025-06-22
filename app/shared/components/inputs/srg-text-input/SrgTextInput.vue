@@ -5,9 +5,7 @@ defineProps<{
   maxLength: number
 }>()
 
-defineEmits<{
-  (e: 'onInput', inputValue: string): void
-}>()
+defineEmits<(e: 'onInput', inputValue: string) => void>()
 
 const inputValue = ref<string>('')
 </script>
