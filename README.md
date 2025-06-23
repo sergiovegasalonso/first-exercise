@@ -11,11 +11,11 @@
 ## this solution does not contain (for lack of time)
 
 1. pinia store
-2. tailwindcss basic configuration
 3. cached query system like tanstack query
 4. theming configuration
 5. develop all tests
 6. meter bem y reset.css
+7. meter i18n
 
 ## definition
 
