@@ -10,11 +10,7 @@ const textInputMaxLenght = 10
 const categoryToFind = ref<string>('')
 const categoryPathResult = ref<string | undefined>()
 
-function handleOnTextInputChange(value: string): void {
-  categoryToFind.value = value
-}
-
-async function handleOnButtonClick() {
+async function submit() {
   if (!categoryToFind.value) {
     alert('Category cannot be empty')
     return
@@ -25,18 +21,18 @@ async function handleOnButtonClick() {
 </script>
 
 <template>
-  <div>
+  <form>
     <srg-text-input
+      v-model="categoryToFind"
       :label="textInputLabel"
       :min-length="textInputMinLenght"
       :max-length="textInputMaxLenght"
-      @on-input="handleOnTextInputChange"
     />
     <br />
-    <srg-button text="Submit" @on-click="handleOnButtonClick" />
+    <srg-button text="Submit" @on-click="submit" />
     <br />
     <div v-if="categoryPathResult">
       {{ categoryPathResult }}
     </div>
-  </div>
+  </form>
 </template>
