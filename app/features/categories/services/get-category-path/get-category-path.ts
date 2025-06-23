@@ -1,6 +1,6 @@
 export async function getCategoryPath(category: string) {
   try {
-    const response = await useFetch(
+    const response = await $fetch(
       `/categories/api/get-category-path?category=${category}`
     )
     return response

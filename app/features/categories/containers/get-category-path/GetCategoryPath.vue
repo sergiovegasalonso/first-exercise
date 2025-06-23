@@ -20,7 +20,7 @@ async function handleOnButtonClick() {
     return
   }
   const response = await getCategoryPath(categoryToFind.value)
-  categoryPathResult.value = response?.data.value?.result
+  categoryPathResult.value = response?.result
 }
 </script>
 
