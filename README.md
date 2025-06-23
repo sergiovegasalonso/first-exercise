@@ -16,6 +16,7 @@
 4. develop all tests
 5. meter bem y reset.css
 6. meter i18n
+7. meter el resto de arquitectura y mejorar el tema de las carpetas por defecto si fuera posible
 
 ## definition
 
