@@ -7,6 +7,10 @@ export default defineNuxtConfig({
       },
     },
   },
+  routeRules: {
+    '/': { prerender: true },
+    '/categories': { prerender: true },
+  },
   hooks: {
     'pages:extend'(pages) {
       pages.push({
