@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import GetCategoryPath from '~/app/features/categories/containers/get-category-path/GetCategoryPath.vue'
+import SrgCategoryPathFinder from '~/app/shared/components/srg-category-path-finder/SrgCategoryPathFinder.vue'
 
 useHead({
   title: 'categories index page',
@@ -9,5 +9,5 @@ useHead({
 
 <template>
   <h1>Categories index page.</h1>
-  <get-category-path />
+  <srg-category-path-finder />
 </template>

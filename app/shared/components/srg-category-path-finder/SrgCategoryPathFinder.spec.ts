@@ -1,10 +1,10 @@
 import { describe, it, expect } from 'vitest'
 import { mount } from '@vue/test-utils'
-import GetCategoryPath from './GetCategoryPath.vue'
+import SrgCategoryPathFinder from './SrgCategoryPathFinder.vue'
 
-describe('GetCategoryPath', () => {
+describe('SrgCategoryPathFinder', () => {
   it('component renders ok', () => {
-    const wrapper = mount(GetCategoryPath)
+    const wrapper = mount(SrgCategoryPathFinder)
 
     const label = wrapper.find('label')
     expect(label.element.textContent).toBe('Get Category Path')
