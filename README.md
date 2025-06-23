@@ -15,7 +15,7 @@
 3. cached query system like tanstack query
 4. theming configuration
 5. develop all tests
-6. meter bem
+6. meter bem y reset.css
 
 ## definition
 
