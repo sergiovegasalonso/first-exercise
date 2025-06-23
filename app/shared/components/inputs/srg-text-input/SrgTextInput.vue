@@ -5,7 +5,9 @@ defineProps<{
   maxLength: number
 }>()
 
-const inputValue = defineModel<string>()
+defineEmits<(e: 'onInput', inputValue: string) => void>()
+
+const inputValue = ref<string>('')
 </script>
 
 <template>
@@ -15,10 +17,10 @@ const inputValue = defineModel<string>()
     <input
       id="text-input"
       v-model="inputValue"
-      type="text"
       :placeholder="label"
       :minlength="minLength"
       :maxlength="maxLength"
+      @input="$emit('onInput', inputValue)"
     />
   </div>
 </template>
