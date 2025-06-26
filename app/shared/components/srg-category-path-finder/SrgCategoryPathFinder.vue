@@ -21,7 +21,7 @@ async function submit() {
 </script>
 
 <template>
-  <div>
+  <form>
     <srg-text-input
       v-model="categoryToFind"
       :label="textInputLabel"
@@ -29,10 +29,10 @@ async function submit() {
       :max-length="textInputMaxLenght"
     />
     <br />
-    <srg-button text="Submit" @on-click="submit" />
+    <srg-button text="Submit" @click.prevent="submit" />
     <br />
     <div v-if="categoryPathResult">
       {{ categoryPathResult }}
     </div>
-  </div>
+  </form>
 </template>

@@ -1,24 +1,23 @@
 <script setup lang="ts">
 defineProps<{
   label: string
-  minLength: number
-  maxLength: number
+  min: number
+  max: number
 }>()
 
-const inputValue = defineModel<string>()
+const inputValue = defineModel<number>()
 </script>
 
 <template>
   <div>
     <label for="text-input">{{ label }}</label>
     <br />
+
     <input
-      id="text-input"
       v-model="inputValue"
-      type="text"
-      :placeholder="label"
-      :minlength="minLength"
-      :maxlength="maxLength"
+      type="number"
+      :min="min"
+      :max="max"
       :aria-label="label"
     />
   </div>
